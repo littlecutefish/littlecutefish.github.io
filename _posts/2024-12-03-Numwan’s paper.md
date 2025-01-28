@@ -1,5 +1,5 @@
 ---
-title: "Numwan’s paper"
+title: "📖 Numwan’s paper"
 date: 2024-12-03 00:00:00 +0800
 categories: [master]
 tags: [diffusion model, adversarial attack, paper, tech]
