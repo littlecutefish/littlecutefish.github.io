@@ -28,9 +28,9 @@ importance, especially in the big data era.
 | Yu等人 | 回顧了隱私框架的數學模型和指標。 |
 | Xu等人 | 基於用戶角色的方法總結隱私相關問題和對策。 |
 
-![Untitled](../assets/images/2024-07-12/Untitled.png)
+![Untitled](../assets/img/2024-07-12/Untitled.png)
 
-![截圖 2024-07-12 下午1.55.07.png](../assets/images/2024-07-12/img1.png)
+![截圖 2024-07-12 下午1.55.07.png](../assets/img/2024-07-12/img1.png)
 
 ---
 
@@ -56,7 +56,7 @@ importance, especially in the big data era.
 
 # 3. Generic privacy-preserving mechanisms
 
-![Untitled](../assets/images/2024-07-12/Untitled%201.png)
+![Untitled](../assets/img/2024-07-12/Untitled%201.png)
 
 ## 3.1. Protection methods
 
@@ -85,7 +85,7 @@ SMC 可以在以下情況下使用：
 
 標識符（ID）、準標識符（QID）、敏感屬性（SA）和非敏感屬性（NSA）
 
-![Untitled](../assets/images/2024-07-12/Untitled%202.png)
+![Untitled](../assets/img/2024-07-12/Untitled%202.png)
 
 ### 3.1.3. Perturbative methods
 
@@ -184,7 +184,7 @@ secure aggregation
 
 ## 4.2. Proposed taxonomy
 
-![截圖 2024-07-12 下午5.31.31.png](../assets/images/2024-07-12/img2.png)
+![截圖 2024-07-12 下午5.31.31.png](../assets/img/2024-07-12/img2.png)
 
 → 提出一種新的隱私保護大數據分析分類法
 

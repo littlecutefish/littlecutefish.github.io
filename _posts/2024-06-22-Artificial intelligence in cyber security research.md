@@ -21,7 +21,7 @@ tags: [travel, Nagoya, Japan]
 
 ## 2-1.  User Access Authentication
 
-![截圖 2024-06-22 下午2.35.49.png](../assets/images/2024-06-22/img1.png)
+![截圖 2024-06-22 下午2.35.49.png](../assets/img/2024-06-22/img1.png)
 
 a) Mode authentication
 
@@ -149,9 +149,9 @@ Hackers會故意向網路結構注入大量非法數據，使網路節點和 lin
 
 其中，24%的方法使用了卷積神經網絡（CNN），15%的方法使用了支持向量機（SVM），12%的方法使用了人工神經網絡（ANN）
 
-![截圖 2024-06-24 晚上10.34.53.png](../assets/images/2024-06-22/img2.png)
+![截圖 2024-06-24 晚上10.34.53.png](../assets/img/2024-06-22/img2.png)
 
-![截圖 2024-06-24 晚上10.48.27.png](../assets/images/2024-06-22/img3.png)
+![截圖 2024-06-24 晚上10.48.27.png](../assets/img/2024-06-22/img3.png)
 
 圖3展示了一個總結大多數網絡安全研究思路的模型。
 
@@ -208,7 +208,7 @@ HLCSM主要分為兩個子模塊：機器檢測模塊（MDM-Machine detection mo
 
 這兩個子模塊相互作用，以預防和檢測網路不確定事件。
 
-![截圖 2024-06-25 上午10.32.07.png](../assets/images/2024-06-22/img4.png)
+![截圖 2024-06-25 上午10.32.07.png](../assets/img/2024-06-22/img4.png)
 
 ### **4.2.1 Machine detection module (MDM)**
 
@@ -260,7 +260,7 @@ CLM的主要功能是決定是否需要調用MIM來完成事件處理。
 
 ## **4.3 Flow chart of HLCSM**
 
-![截圖 2024-06-25 下午2.32.18.png](../assets/images/2024-06-22/img5.png)
+![截圖 2024-06-25 下午2.32.18.png](../assets/img/2024-06-22/img5.png)
 
 從流程圖中可以看出，事件判斷後應進行一些後續工作，以構成一個完整的網路事件防禦模型。
 

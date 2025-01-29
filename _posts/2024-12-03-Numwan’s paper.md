@@ -35,43 +35,43 @@ tags: [diffusion model, adversarial attack, paper, tech]
 
 # 2. 文獻回顧
 
-![image.png](../assets/images/2024-12-03/image.png)
+![image.png](../assets/img/2024-12-03/image.png)
 
 ## 2.1 Latent Diffusion Model
 
 圖像 x 通過變分自編碼器（VAE）中的編碼器 ϵ 進行處理，編碼器將輸入映射到潛在空間中的分佈 z0。這個分佈通常以高斯分佈來建模，並具有學習得到的均值和標準差參數。
 
-![image.png](../assets/images/2024-12-03/image%201.png)
+![image.png](../assets/img/2024-12-03/image%201.png)
 
 → μ(x)和σ(x)是由神經網絡模型基於輸入x 學到的參數，而ϵ是從標準正態分佈N(0,I)中抽樣的隨機變量。
 
 這樣的重參數化技巧確保了訓練過程中的梯度能夠順利流動，從而使得模型可以通過標準的反向傳播算法進行訓練。
 
-![image.png](../assets/images/2024-12-03/image%202.png)
+![image.png](../assets/img/2024-12-03/image%202.png)
 
 → 在潛在空間中，模型接著進行正向擴散過程，逐步將初始的潛在表示 z0 轉變為在T 個時間步長上變成高度噪聲化的版本zT。
 
-![image.png](../assets/images/2024-12-03/image%203.png)
+![image.png](../assets/img/2024-12-03/image%203.png)
 
 → 反向過程從純高斯噪聲 zt∼N(0,I)開始，並試圖通過逐步去噪來逆轉正向擴散過程，最終逐漸生成一個連貫的圖像。反向過程的目標是估算條件概率 pθ(zt−1∣zt)，其中 θ 是神經網絡的參數，該網絡在每個步驟預測噪聲組件。
 
-![image.png](../assets/images/2024-12-03/image%204.png)
+![image.png](../assets/img/2024-12-03/image%204.png)
 
 → 這個擴散過程損失函數有助於訓練模型在每個時間步準確預測噪聲，從而使反向過程能夠有效地去噪並生成高質量的圖像。
 
-![image.png](../assets/images/2024-12-03/image%205.png)
+![image.png](../assets/img/2024-12-03/image%205.png)
 
 → 將最終的去噪後的潛在表示 z0 轉換為具有高質量、真實感的圖像 $\tilde{x}$ ，從而完成整個生成過程。
 
-![image.png](../assets/images/2024-12-03/image%206.png)
+![image.png](../assets/img/2024-12-03/image%206.png)
 
 (2.6) → 變分自編碼器（VAE）的目標是學習一個有意義且連續的潛在空間表示，用於輸入數據，從而實現原始數據的重建和新樣本的生成。為了達到這個目標，VAE 優化一個結合兩個主要組件的損失函數：重建損失和正則化損失。首先，重建損失用來衡量 VAE 如何從其潛在表示 z 中準確重建原始輸入數據 x，這促使模型在數據空間和潛在空間之間進行精確映射。重建損失通常使用均方誤差（MSE）等指標來衡量。
 
-![image.png](../assets/images/2024-12-03/image%207.png)
+![image.png](../assets/img/2024-12-03/image%207.png)
 
 (2.7) → 正則化損失（KL 散度）。這一項促使潛在空間的分佈 q(z∣x) 逼近標準高斯分佈 p(z)=N(0,I)。這種正則化有助於保持潛在空間的連續性和平滑性，使得 VAE 能夠從這個高斯分佈中進行採樣，生成多樣化但真實的樣本。
 
-![image.png](../assets/images/2024-12-03/image%208.png)
+![image.png](../assets/img/2024-12-03/image%208.png)
 
 (2.8) → combine
 
@@ -126,7 +126,7 @@ tags: [diffusion model, adversarial attack, paper, tech]
 
 # 3. 提出的方法
 
-![image.png](../assets/images/2024-12-03/image%209.png)
+![image.png](../assets/img/2024-12-03/image%209.png)
 
 ## 3.1 基本概念
 
@@ -139,47 +139,47 @@ tags: [diffusion model, adversarial attack, paper, tech]
 
 A: 受 AdvDM 方法的啟發，我們對傳統的擴散過程進行了修改，僅在特定的隨機選擇的時間步長 t 上加入噪聲，而非在所有時間步長上都進行噪聲擴散。這意味著我們只在某個特定的時間步長 t 上將噪聲添加到潛在表示中，並將帶有噪聲的圖像用於反向擴散過程，其中 U-Net 模型會嘗試預測並移除該時間步長 t 上的噪聲。
 
-![image.png](../assets/images/2024-12-03/image%2010.png)
+![image.png](../assets/img/2024-12-03/image%2010.png)
 
 B: 將帶擾動的圖像轉換為壓縮的表示形式，該表示形式能夠捕捉圖像的基本特徵，同時保留最初的對抗擾動。這個過程的關鍵在於將圖像轉換為潛在空間的表示，使得對抗擾動能夠在這一過程中被有效地嵌入和保留。這樣，圖像在經過擴散模型的進一步處理後，對抗擾動將能夠持續影響生成結果，從而實現對模型生成能力的干擾。
 
-![image.png](../assets/images/2024-12-03/image%2011.png)
+![image.png](../assets/img/2024-12-03/image%2011.png)
 
 C: 將傳統的前向擴散過程（2.2）進行調整(3.3)，在每次迭代中，我們隨機選擇一個時間步長 t，並將噪聲添加到已經包含初始擾動的潛在圖像中。這一調整會在特定的時間步長上生成帶有噪聲的潛在表示，從而使模型在不同的迭代中經歷不同強度的噪聲。這種方法通過在特定時間步長引入噪聲，避免了傳統擴散過程中噪聲的均勻加劇，並使得每次擾動的強度都能有所變化，進而增加模型在學習過程中的挑戰，強化對抗效果。
 
-![image.png](../assets/images/2024-12-03/image%2012.png)
+![image.png](../assets/img/2024-12-03/image%2012.png)
 
-![image.png](../assets/images/2024-12-03/image%2013.png)
+![image.png](../assets/img/2024-12-03/image%2013.png)
 
 D: 在圖像被編碼到潛在空間之前，我們就已經將通用對抗擾動添加到圖像中。這樣做使得 U-Net 在反向過程中難以準確預測噪聲。我們的目標是最大化實際噪聲與預測噪聲之間的差異，從而使得模型在訓練過程中難以從對抗圖像中學習。
 
-![image.png](../assets/images/2024-12-03/image%2014.png)
+![image.png](../assets/img/2024-12-03/image%2014.png)
 
-![image.png](../assets/images/2024-12-03/image%2015.png)
+![image.png](../assets/img/2024-12-03/image%2015.png)
 
 E: 進入重建階段，這一階段的設計受 DUAW 方法的啟發。在這一階段，我們使用變分自編碼器（VAE）將帶噪的潛在表示解碼回像素空間。這裡的主要目標並非生成一個忠實的重建圖像，而是評估重建圖像與原始圖像之間的差異。
 
 F: 為了量化這一差異，我們使用了多尺度結構相似性指數（MS-SSIM）來作為重建損失。MS-SSIM 能夠有效捕捉圖像之間的結構性與感知性差異，因此特別適合用來評估對抗影響。
 
-![image.png](../assets/images/2024-12-03/image%2016.png)
+![image.png](../assets/img/2024-12-03/image%2016.png)
 
-![image.png](../assets/images/2024-12-03/image%2017.png)
+![image.png](../assets/img/2024-12-03/image%2017.png)
 
 G: 我們將重建損失與擴散過程中的損失結合，指導對抗擾動的生成。這一結合確保了對抗影響在擴散與重建過程中得以加強，從而為生成通用對抗擾動（UAP）提供了一個強有力的機制。這樣，我們可以防止模型準確捕捉並重建原始的、受版權保護的內容，從而有效保護其免受未經授權的複製。
 
-![image.png](../assets/images/2024-12-03/image%2018.png)
+![image.png](../assets/img/2024-12-03/image%2018.png)
 
-![image.png](../assets/images/2024-12-03/image%2019.png)
+![image.png](../assets/img/2024-12-03/image%2019.png)
 
 H: 為了進一步提升 UAP 的效果，我們在梯度更新過程中引入了動量優化。動量在創建通用擾動中起著關鍵作用，因為它可以累積先前迭代的梯度，確保擾動更新在不同圖像間保持一致性並具有持久影響。通過累積這些梯度，動量有助於穩定優化過程，使得擾動能夠在各種輸入圖像中都有效。
 
-![image.png](../assets/images/2024-12-03/image%2020.png)
+![image.png](../assets/img/2024-12-03/image%2020.png)
 
 I: 為了進一步完善 UAP，我們採用了投影梯度下降（PGD）。PGD 根據損失函數的梯度迭代調整對抗擾動，並將其投影回有效的擾動空間，確保變動保持細微且不可察覺，同時對多張圖像都有效。這一迭代過程對於確保生成的 UAP 既能保持對抗效力，又不影響圖像的視覺質量，至關重要。
 
-![image.png](../assets/images/2024-12-03/image%2021.png)
+![image.png](../assets/img/2024-12-03/image%2021.png)
 
-![image.png](../assets/images/2024-12-03/image%2022.png)
+![image.png](../assets/img/2024-12-03/image%2022.png)
 
 J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能夠生成在多樣化輸入圖像上都有效且視覺一致的通用對抗擾動（UAP）。擴散和重建過程將對抗噪聲引入並精煉，保證其普適性；動量優化幫助穩定梯度更新，保證擾動在不同圖像中的有效性；而 PGD 則進一步精煉擾動，保持其感知上的細微性。
 
@@ -199,26 +199,26 @@ J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能�
     每次生成過程的初期，對每張選定的圖像施加擾動，這些擾動將影響後續的生成過程。
     
 
-![image.png](../assets/images/2024-12-03/image%2023.png)
+![image.png](../assets/img/2024-12-03/image%2023.png)
 
 1. Latent Space Encoding: (B) 
     
     將帶擾動的圖像轉換為壓縮的表示形式，能夠捕捉圖像的基本特徵，同時保留最初的對抗擾動。
     
 
-![image.png](../assets/images/2024-12-03/image%2024.png)
+![image.png](../assets/img/2024-12-03/image%2024.png)
 
 1. Applying Noise to Latent Image: (C)
     
     通過在特定時間步長引入噪聲，避免了傳統擴散過程中噪聲的均勻加劇，並使得每次擾動的強度都能有所變化，進而增加模型在學習過程中的挑戰，強化對抗效果。
     
-    ![image.png](../assets/images/2024-12-03/image%2025.png)
+    ![image.png](../assets/img/2024-12-03/image%2025.png)
     
 2. U-Net Noise Prediction and Loss Calculation: (D)
     
     我們計算預測噪聲與實際噪聲之間的均方誤差，並將其定義為傳統的擴散過程損失(2.4)。這個誤差隨後用於指導生成更有效的對抗性擾動(3.4)。
     
-    ![image.png](../assets/images/2024-12-03/image%2026.png)
+    ![image.png](../assets/img/2024-12-03/image%2026.png)
     
 
 ### 3.3.2 擾動生成於重建過程
@@ -239,9 +239,9 @@ J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能�
     
     在此形式下，損失值越高，原始圖像與重建圖像之間的感知差異越大。
     
-    ![image.png](../assets/images/2024-12-03/image%2027.png)
+    ![image.png](../assets/img/2024-12-03/image%2027.png)
     
-    ![image.png](../assets/images/2024-12-03/image%2028.png)
+    ![image.png](../assets/img/2024-12-03/image%2028.png)
     
 
 ### 3.3.3 結合損失並利用動量增強
@@ -254,13 +254,13 @@ J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能�
     
     結合擴散損失（L_diffusion）和重建損失（L_reconstruction）的目的是為了讓對抗性擾動在兩個階段都能起到有效的干擾作用。為此，我們將兩個損失進行加權組合，這樣能夠在擴散過程和重建過程中保持平衡影響。
     
-    ![image.png](../assets/images/2024-12-03/image%2018.png)
+    ![image.png](../assets/img/2024-12-03/image%2018.png)
     
     其中，γ 和 λ 是加權係數。這些係數控制每個損失對最終結果的影響。
     
     在計算完組合損失後，我們需要計算損失函數的梯度，這將用來優化對抗性擾動。
     
-    ![image.png](../assets/images/2024-12-03/image%2019.png)
+    ![image.png](../assets/img/2024-12-03/image%2019.png)
     
     這樣的梯度計算會將兩個損失的影響都考慮在內，並指導模型在擴散和重建過程中生成對抗性擾動。
     
@@ -268,9 +268,9 @@ J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能�
     
     將動量納入來自組合損失的梯度進一步增強了優化過程，通過攜帶先前迭代的梯度信息來實現。這一動量技術使得對抗性擾動可以在多個步驟中積累並保持一致的方向性。因此，生成的對抗範例變得更加健壯，因為它同時利用了擴散過程和重建過程，並通過動量保持一致且增強的攻擊方向。
     
-    ![image.png](../assets/images/2024-12-03/image%2029.png)
+    ![image.png](../assets/img/2024-12-03/image%2029.png)
     
-    ![image.png](../assets/images/2024-12-03/image%2030.png)
+    ![image.png](../assets/img/2024-12-03/image%2030.png)
     
 
 ### 3.3.4 通用對抗擾動與投影梯度下降
@@ -283,19 +283,19 @@ J: 通過結合擴散、重建、動量優化和 PGD，我們提出的方法能�
 
 → 在**投影梯度下降法**（PGD）中，通過迭代調整通用對抗擾動δ，使其越來越能“迷惑”模型。這是通過調整δ，使其朝著最大化特定損失函數（擴散過程損失和重建損失）方向進行，從而使得輸入圖像對模型來說越來越難以準確解讀。
 
-![image.png](../assets/images/2024-12-03/image%2031.png)
+![image.png](../assets/img/2024-12-03/image%2031.png)
 
-![image.png](../assets/images/2024-12-03/image%2032.png)
+![image.png](../assets/img/2024-12-03/image%2032.png)
 
 → 在每次PGD迭代中，δ根據損失函數的梯度方向和動量（3.8）微調更新，這樣可以使擾動更具針對性和效果。最終的更新公式如3.10。
 
-![image.png](../assets/images/2024-12-03/image%2033.png)
+![image.png](../assets/img/2024-12-03/image%2033.png)
 
-![image.png](../assets/images/2024-12-03/image%2034.png)
+![image.png](../assets/img/2024-12-03/image%2034.png)
 
 ## 3.4 Algorithm
 
-![image.png](../assets/images/2024-12-03/image%2035.png)
+![image.png](../assets/img/2024-12-03/image%2035.png)
 
 1. **隨機初始化擾動 δ₀，確保其範數 ||δ||ₚ 不超過 ξ。**
     - 在這一步，擾動 δ₀ 被隨機初始化，並且保證它的範數不超過給定的擾動預算 ξ。

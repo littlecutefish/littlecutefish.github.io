@@ -5,7 +5,7 @@ order: 4
 ---
 
 <div align="center">
-    <img src="assets/images/Cover.png" alt="Profile cover image">
+    <img src="assets/img/about/Cover.png" alt="Profile cover image">
 </div>
 
 <h1 align="center">Hey Everyone 👋, I'm Jolie Liu</h1>
