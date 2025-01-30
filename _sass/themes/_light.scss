@@ -1,0 +1,265 @@
+@mixin styles {
+  /* Framework color */
+  --main-bg: white;
+  --mask-bg: #f8e1e1;
+  --main-border-color: #ffe3e8;
+
+  /* Common color */
+  --text-color: #6b5c5c; // 溫暖灰色文字
+  --text-muted-color: #9e8989; // 柔和灰文字
+  --text-muted-highlight-color: inherit;
+  --heading-color: #c4899b; // 粉紅標題
+  --label-color: #aa8c8c; // 標籤色
+  --blockquote-border-color: #ffd6e0; // 引用邊框
+  --blockquote-text-color: #a686a3; // 引用文字
+  --link-color: #da9ab5; // 連結色
+  --link-underline-color: #ffe4eb; // 連結底線
+  --button-bg: #fff8f8; // 按鈕背景
+  --btn-border-color: #ffd6e0; // 按鈕邊框
+  --btn-backtotop-color: #c4899b; // 回頂部按鈕
+  --btn-backtotop-border-color: #ffe4eb; // 回頂部按鈕邊框
+  --checkbox-color: #ffd6e0; // 複選框
+  --checkbox-checked-color: #da9ab5; // 複選框選中
+  --img-bg: radial-gradient(
+    circle,
+    rgb(255, 248, 248) 0%,
+    rgb(255, 236, 240) 100%
+  );
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgba(255, 248, 248, 0) 0%,
+    rgba(255, 226, 234, 1) 50%,
+    rgba(255, 248, 248, 0) 100%
+  );
+
+  /* Sidebar */
+  --site-title-color: #c4899b; // 網站標題
+  --site-subtitle-color: #cb9daa; // 網站副標題
+  --sidebar-bg: #fff1f3; // 側邊欄背景
+  --sidebar-border-color: #ffe4eb; // 側邊欄邊框
+  --sidebar-muted-color: #79656a; // 側邊欄次要文字
+  --sidebar-active-color: #75525d; // 側邊欄啟用項目
+  --sidebar-hover-bg: rgba(255, 214, 224, 0.64); // 側邊欄懸停
+  --sidebar-btn-bg: #fff8f8; // 側邊欄按鈕
+  --sidebar-btn-color: #d8a8b6; // 側邊欄按鈕文字
+  --avatar-border-color: #fff8f8; // 頭像邊框
+
+  /* Topbar */
+  --topbar-bg: white; // 頂部欄背景
+  --topbar-text-color: #6b5c5c; // 頂部欄文字
+  --search-border-color: #ffe4eb; // 搜尋框邊框
+  --search-icon-color: #d8a8b6; // 搜尋圖示
+  --input-focus-border-color: #ffd6e0; // 輸入框焦點
+
+  /* Home page */
+  --post-list-text-color: #8b7575; // 文章列表文字
+  --btn-patinator-text-color: #c4899b; // 分頁按鈕文字
+  --btn-paginator-hover-color: #fff1f3; // 分頁按鈕懸停
+
+  /* Posts */
+  --toc-highlight: #da9ab5;  // 目錄高亮
+  --toc-popup-border-color: #ffe4eb;  // 目錄彈出邊框
+  --btn-share-color: #d8a8b6;  // 分享按鈕
+  --btn-share-hover-color: #c4899b;  // 分享按鈕懸停
+  --card-bg: #fff8f8;  // 卡片背景
+  --card-hovor-bg: #f7c3d1;  // 卡片懸停
+  --card-shadow: rgba(196, 137, 155, 0.05) 0 2px 6px 0,
+    rgba(255, 214, 224, 0.15) 0 0 0 1px;  // 卡片陰影
+  --footnote-target-bg: #fff1f3;  // 腳註目標
+  --tb-odd-bg: #fff8f8;  // 表格奇數行
+  --tb-border-color: #ffe4eb;  // 表格邊框
+  --dash-color: #ffd6e0;  // 虛線
+  --kbd-wrap-color: #ffd6e0;  // 鍵盤外框
+  --kbd-text-color: var(--text-color);  // 鍵盤文字
+  --kbd-bg-color: #fff8f8;  // 鍵盤背景
+  --prompt-text-color: #6b5c5c;
+  --prompt-tip-bg: rgba(218, 154, 181, 0.2);
+  --prompt-tip-icon-color: #c4899b;
+  --prompt-info-bg: #f1e8ec;
+  --prompt-info-icon-color: #d8a8b6;
+  --prompt-warning-bg: #ffe9ed;
+  --prompt-warning-icon-color: #e4b1c9;
+  --prompt-danger-bg: rgba(255, 214, 224, 0.56);
+  --prompt-danger-icon-color: #c4899b;
+
+ /* Tags */
+ --tag-border: #ffd6e0;
+ --tag-shadow: var(--btn-border-color);
+ --tag-hover: rgba(255, 214, 224, 0.5);
+ --search-tag-bg: #fff8f8;
+
+ /* Categories */
+ --categories-border: rgba(196, 137, 155, 0.125);
+ --categories-hover-bg: var(--btn-border-color);
+ --categories-icon-hover-color: #c4899b;
+
+ /* Archive */
+ --timeline-color: rgba(218, 154, 181, 0.075);
+ --timeline-node-bg: #ffd6e0;
+ --timeline-year-dot-color: #fff8f8;
+
+ /* Custom code light mode colors */
+ --language-border-color: #ffe4eb;
+ --highlight-bg-color: #fff8f8;
+ --highlighter-rouge-color: #c4899b;
+ --highlight-lineno-color: #d8a8b6;
+ --inline-code-bg: rgba(218, 154, 181, 0.05);
+ --code-color: #6b5c5c;
+ --code-header-text-color: #d8a8b6;
+ --code-header-muted-color: #ffe4eb;
+ --code-header-icon-color: #ffd6e0;
+ --clipboard-checked-color: #da9ab5;
+
+ [class^='prompt-'] {
+   --link-underline-color: #ffe4eb;
+ }
+
+ /* Syntax highlighting theme - 馬卡龍風格 */
+ .highlight,
+ .highlight .w {
+   color: #6b5c5c;
+   background-color: #fff8f8;
+ }
+
+ .highlight .k,
+ .highlight .kd,
+ .highlight .kn,
+ .highlight .kp,
+ .highlight .kr,
+ .highlight .kt,
+ .highlight .kv {
+   color: #e4699c;  // 粉紅色關鍵字
+ }
+
+ .highlight .gr {
+   color: #fff8f8;
+ }
+
+ .highlight .gd {
+   color: #c25b70;
+   background-color: #ffe4eb;
+ }
+
+ .highlight .nb {
+   color: #c4899b;
+ }
+
+ .highlight .nc {
+   color: #c4899b;
+ }
+
+ .highlight .no {
+   color: #c4899b;
+ }
+
+ .highlight .nn {
+   color: #c4899b;
+ }
+
+ .highlight .sr {
+   color: #b77f98;
+ }
+
+ .highlight .na {
+   color: #b77f98;
+ }
+
+ .highlight .nt {
+   color: #b77f98;
+ }
+
+ .highlight .gi {
+   color: #b77f98;
+   background-color: #ffeef2;
+ }
+
+ .highlight .kc,
+ .highlight .l,
+ .highlight .ld,
+ .highlight .m,
+ .highlight .mb,
+ .highlight .mf,
+ .highlight .mh,
+ .highlight .mi,
+ .highlight .il,
+ .highlight .mo,
+ .highlight .mx,
+ .highlight .sb,
+ .highlight .bp,
+ .highlight .ne,
+ .highlight .nl,
+ .highlight .py {
+   color: #da9ab5;  // 統一數值和特殊關鍵字顏色
+ }
+
+ .highlight .nv,
+ .highlight .vc,
+ .highlight .vg,
+ .highlight .vi,
+ .highlight .vm {
+   color: #da9ab5;
+ }
+
+ .highlight .o,
+ .highlight .ow {
+   color: #da9ab5;
+ }
+
+ .highlight .gh,
+ .highlight .gu {
+   color: #da9ab5;
+   font-weight: bold;
+ }
+
+ .highlight .s,
+ .highlight .sa,
+ .highlight .sc,
+ .highlight .dl,
+ .highlight .sd,
+ .highlight .s2,
+ .highlight .se,
+ .highlight .sh,
+ .highlight .sx,
+ .highlight .s1,
+ .highlight .ss {
+   color: #c77c98;  // 字串顏色
+ }
+
+ .highlight .nd,
+ .highlight .nf,
+ .highlight .fm {
+   color: #d191b0;  // 函數名稱
+ }
+
+ .highlight .err {
+   color: #fff8f8;
+   background-color: #c25b70;
+ }
+
+ .highlight .c,
+ .highlight .ch,
+ .highlight .cd,
+ .highlight .cm,
+ .highlight .cp,
+ .highlight .cpf,
+ .highlight .c1,
+ .highlight .cs {
+   color: #b39aa1;  // 註釋顏色
+ }
+
+ .highlight .gl,
+ .highlight .gt {
+   color: #b39aa1;
+ }
+
+ .highlight .ni,
+ .highlight .si,
+ .highlight .ge {
+   color: #6b5c5c;  // 基本文字顏色
+ }
+
+ .highlight .gs {
+   color: #6b5c5c;
+   font-weight: bold;
+ }
+}

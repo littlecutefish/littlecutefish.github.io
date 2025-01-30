@@ -2,8 +2,8 @@
 title: "📖 Artificial intelligence in cyber security: research advances,
 challenges, and opportunities"
 date: 2024-06-06 00:00:00 +0800
-categories: [travel]
-tags: [travel, Nagoya, Japan]
+categories: [master]
+tags: [cyber security, AI, paper, tech]
 ---
 
 # 1. Abstract

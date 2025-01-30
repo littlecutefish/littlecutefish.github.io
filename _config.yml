@@ -88,7 +88,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: [light]
+theme_mode: light # 可以設置默認主題 [light|dark|pink]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
