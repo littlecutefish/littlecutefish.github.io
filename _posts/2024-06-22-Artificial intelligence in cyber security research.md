@@ -45,6 +45,7 @@ b) Biometric authentication
 | Hariyanto等（2015b） | 基於 Artificial Neural Network 的指紋特徵點匹配算法。 |
 | Saeed等（2018a） | 基於修正 Histogram of Oriented Gradients 描述子的指紋分類方法。 |
 | Bakhshi和Veisi（2019a） | 基於 CNN 的 end-to-end 識別模型。 |
+
 - Face Recognition:
 
 | 作者 | 研究內容 |
@@ -52,6 +53,7 @@ b) Biometric authentication
 | Ding和Tao（2018） | 基於 CNN 的框架，改進了 triple-state loss function。 |
 | Salyut和Kurnaz（2018b） | 基於局部二值模式的 ANN，用於實現輪廓人臉識別(contour face recognition)。 |
 | Verma等（2019） | 面部表情識別中使用了混合遺傳特徵學習網絡(hybrid genetic feature learning network)。 |
+
 - Iris Recognition:
 
 | 作者 | 研究內容 |
@@ -59,6 +61,7 @@ b) Biometric authentication
 | Păvăloi和Niţă（2018a） | 使用了一些距離度量和尺度不變特徵變換（SIFT-Scale Invariant Feature Transform）。 |
 | Zhang等（2019） | 使用 Dilated convolution (膨脹) 。 |
 | Gangwar和Joshi（2016a） | 使用 Deep Convolutional Neural Network 。 |
+
 - Finger Vein Recognition:
 
 Yang等（2019）使用多層ELM
@@ -76,6 +79,7 @@ Zeng等（2020）使用轉移學習來實現識別
 | Amberkar等（2018b） | 研究了RNNs(Recurrent Neural Networks)在語音識別領域的重要作用。 |
 | Parthasarathy和Busso（2019b） | 引入了梯形網絡(ladder networks)。 |
 | Han和Wang（2019a） | 提出了一種使用 Deep Belief Networks 和近端SVM的語音識別新方法。 |
+
 - Gait Recognition:
 
 | 作者 | 研究內容 |
