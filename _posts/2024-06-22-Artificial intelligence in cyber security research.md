@@ -1,7 +1,7 @@
 ---
 title: "📖 Artificial intelligence in cyber security: research advances,
 challenges, and opportunities"
-date: 2024-06-06 00:00:00 +0800
+date: 2024-06-22 00:00:00 +0800
 categories: [master]
 tags: [cyber security, AI, paper, tech]
 ---
