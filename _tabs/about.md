@@ -73,6 +73,3 @@ order: 4
 <img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white" alt="Google Chrome badge">
 <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" alt="Microsoft Office badge">
 </details>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=littlecutefish&show_icons=true&locale=en&layout=compact" alt="Most used programming languages chart" width="100%">
-<img src="https://github-readme-stats.vercel.app/api?username=littlecutefish&show_icons=true&locale=en" alt="GitHub statistics chart" width="100%">
