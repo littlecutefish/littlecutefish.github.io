@@ -5,14 +5,11 @@ categories: [master]
 tags: [paper, tech, diffusion model, malware]
 ---
 
-### MalImgDA: Diffusion-based Data Augmentation for Long-tailed Malware Family Classification
+Gang Yang; Jun He; Bo Wu; Tao Xia; Linna Fan; Lin Ni
 
-### Gang Yang; Jun He; Bo Wu; Tao Xia; Linna Fan; Lin Ni
+Cite as: IEEE ICASSP 2025
 
-
-### Cite as: IEEE ICASSP 2025
-
-### Submitted on 2025/03
+Submitted on 2025/03
 
 
 ### Abstract
@@ -30,11 +27,11 @@ Experimental Validation: Experiments on two publicly available datasets show the
 
 ### Methodology
 
-### 1. Diffusion Model Pre-training and Fine-tuning
+1. Diffusion Model Pre-training and Fine-tuning
 
-### 3. Dataset Re-balancing for Image Model Training
+2. Diffusion Model-based Malware Image Generation
 
-### 2. Diffusion Model-based Malware Image Generation
+3. Dataset Re-balancing for Image Model Training
 
 ![slide 3](/assets/img/2025-03-20/slide3_img1.png)
 

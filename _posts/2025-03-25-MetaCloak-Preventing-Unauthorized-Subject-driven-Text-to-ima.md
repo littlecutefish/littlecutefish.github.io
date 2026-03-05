@@ -6,29 +6,21 @@ tags: [paper, tech, diffusion model, face privacy]
 ---
 
 
-### Cite as: CVPR
+Cite as: CVPR
 
-### Submitted on 2024
+Submitted on 2024
 
-### MetaCloak: Preventing Unauthorized Subject-driven Text-to-image
-
-### Diffusion-based Synthesis via Meta-learning
-
-### Yixin Liu, Chenrui Fan, Yutong Dai, Xun Chen, Pan Zhou, Lichao Sun
+Yixin Liu, Chenrui Fan, Yutong Dai, Xun Chen, Pan Zhou, Lichao Sun
 
 
 ### Abstract
 
-### Problem:
-
+Problem:
 Text-to-image models can create harmful content, risking individual safety.
-
 Existing methods aim to make images "unlearnable" but have limitations.
 
-### Limitations:
-
+Limitations:
 Current methods are sub-optimal due to manual heuristics in complex optimization.
-
 They lack robustness against simple transformations like Gaussian filtering.
 
 ### Solution:
@@ -81,24 +73,3 @@ Using SGD -> The updated protected image Xp should be as visually close to the o
 ### Results
 
 ![slide 7](/assets/img/2025-03-25/slide7_img1.png)
-
-
-### Numwan’s result test~
-
-### Add Gaussian filtering
-
-### Numwan
-
-### Clean
-
-![slide 8](/assets/img/2025-03-25/slide8_img1.png)
-
-![slide 8](/assets/img/2025-03-25/slide8_img2.png)
-
-![slide 8](/assets/img/2025-03-25/slide8_img3.png)
-
-![slide 8](/assets/img/2025-03-25/slide8_img4.png)
-
-![slide 8](/assets/img/2025-03-25/slide8_img5.png)
-
-![slide 8](/assets/img/2025-03-25/slide8_img6.png)

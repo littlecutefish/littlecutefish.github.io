@@ -6,31 +6,15 @@ tags: [progress, tech]
 ---
 
 
-### Survey (MetaCloak)
-
-### +
-
-### GPT-4o Img-Gen
-
-
-### Outline
-
-### Paper
-
-MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based Synthesis via Meta-learning
-
-### GPT-4o image generation
-
-
 ### Survey #
 
 ### Safety at Scale: A Comprehensive Survey of Large Model Safety
 
-### Xingjun Ma, Yifeng Gao, Yixu Wang, Ruofan Wang, Xin Wang, Ye Sun, …
+Xingjun Ma, Yifeng Gao, Yixu Wang, Ruofan Wang, Xin Wang, Ye Sun, …
 
-### ArXiv:2502.05206
+ArXiv:2502.05206
 
-### Submitted on 2025/03
+Submitted on 2025/03
 
 
 ### Intellectual Property Protection
@@ -42,9 +26,9 @@ MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based 
 
 MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based Synthesis via Meta-learning
 
-### Yixin Liu, Chenrui Fan, Yutong Dai, Xun Chen, Pan Zhou, Lichao Sun
+Yixin Liu, Chenrui Fan, Yutong Dai, Xun Chen, Pan Zhou, Lichao Sun
 
-### 2024 CVPR
+2024 CVPR
 
 ### Problem:
 
@@ -106,36 +90,15 @@ Using SGD → The updated protected image Xp should be as visually close to the 
 ![slide 10](/assets/img/2025-03-31/slide10_img1.png)
 
 
-### Numwan’s result test~
-
-### Add Gaussian filtering
-
-### Numwan
-
-### Clean
-
-![slide 11](/assets/img/2025-03-31/slide11_img1.png)
-
-![slide 11](/assets/img/2025-03-31/slide11_img2.png)
-
-![slide 11](/assets/img/2025-03-31/slide11_img3.png)
-
-![slide 11](/assets/img/2025-03-31/slide11_img4.png)
-
-![slide 11](/assets/img/2025-03-31/slide11_img5.png)
-
-![slide 11](/assets/img/2025-03-31/slide11_img6.png)
-
-
 ### GPT-4o Image Generation
 
 ### Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation #
 
-### Peize Sun, Yi Jiang, Shoufa Chen, Shilong Zhang, Bingyue Peng, Ping Luo, Zehuan Yuan
+Peize Sun, Yi Jiang, Shoufa Chen, Shilong Zhang, Bingyue Peng, Ping Luo, Zehuan Yuan
 
-### arXiv:2406.06525
+arXiv:2406.06525
 
-### 2024/06
+2024/06
 
 ![slide 12](/assets/img/2025-03-31/slide12_img1.png)
 
@@ -202,9 +165,6 @@ Chain-of-Thought (CoT) Style Refinement → The model could iteratively enhance 
 
 Layered Input Processing → The model might generate a low-resolution draft first and then apply multiple processing steps to refine details and increase clarity.
 
-![slide 15](/assets/img/2025-03-31/slide15_img1.png)
-
-
 ![slide 16](/assets/img/2025-03-31/slide16_img1.png)
 
 ![slide 16](/assets/img/2025-03-31/slide16_img2.png)
@@ -214,12 +174,12 @@ Layered Input Processing → The model might generate a low-resolution draft fir
 
 ### gpt-4o-img-gen:
 
-### https://x.com/dotey/status/1904684852982813022
+https://x.com/dotey/status/1904684852982813022
 
-### https://www.facebook.com/photo/?fbid=10162841428450802&set=a.10150347633745802
+https://www.facebook.com/photo/?fbid=10162841428450802&set=a.10150347633745802
 
 https://www.threads.net/@prompt_case/post/DH0dmZcxtMt?xmt=AQGze7s1OXyuZ0F_Mh6jNpi8cGfsrCs3OcYjz-S6E8lYug
 
 ### llama-gen:
 
-### https://www.threads.net/@shaochuanwang/post/DFBVLeTzeco
+https://www.threads.net/@shaochuanwang/post/DFBVLeTzeco

@@ -5,14 +5,11 @@ categories: [master]
 tags: [paper, tech, face privacy]
 ---
 
-### Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models
+Shawn Shan, Jenna Cryan, Emily Wenger, Haitao Zheng, Rana Hanocka, Ben Y. Zhao
 
-### Shawn Shan, Jenna Cryan, Emily Wenger, Haitao Zheng, Rana Hanocka, Ben Y. Zhao
+Cite as: USENIX Security 2023
 
-
-### Cite as: USENIX Security 2023
-
-### Submitted on 2023/08
+Submitted on 2023/08
 
 
 ### Abstract
@@ -69,33 +66,9 @@ Ensures that the generated image remains visually similar to the original artwor
 
 ![slide 4](/assets/img/2025-03-21/slide4_img1.png)
 
-
-### Evaluation
-
-### Participating artists: 1156
-
-### No
-
-### 92%
-
-### Yes
-
-### 93%
-
-### Yes
-
-### 88%
-
-![slide 5](/assets/img/2025-03-21/slide5_img1.png)
-
-![slide 5](/assets/img/2025-03-21/slide5_img2.png)
-
-![slide 5](/assets/img/2025-03-21/slide5_img3.png)
-
-
 ### Evaluation Metrics
 
-### Glaze has a high protection success rate
+Glaze has a high protection success rate
 
 ![slide 6](/assets/img/2025-03-21/slide6_img1.png)
 

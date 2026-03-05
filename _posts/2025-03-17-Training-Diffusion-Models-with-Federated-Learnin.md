@@ -1,18 +1,15 @@
 ---
-title: "📖 Training Diffusion Models with Federated Learnin"
+title: "📖 Training Diffusion Models with Federated Learning"
 date: 2025-03-17 00:00:00 +0800
 categories: [master]
 tags: [paper, tech, diffusion model, federated learning]
 ---
 
-### Training Diffusion Models with Federated Learning
+Matthijs de Goede, Bart Cox, Jérémie Decouchant
 
-### Matthijs de Goede, Bart Cox, Jérémie Decouchant
-
-
-### Cite as: arXiv:2406.12575 [cs.LG]
-
-### Submitted on 18 Jun 2024
+Cite as: arXiv:2406.12575 [cs.LG]
+ 
+Submitted on 18 Jun 2024
 
 
 ### Abstract
@@ -55,16 +52,10 @@ Designed for training models across multiple independent organizations (e.g., ho
 
 Designed for large-scale distributed training across numerous mobile or IoT devices, where each device contributes to training without sharing its data.
 
-### Cite as: Advances and open problems in federated learning	arXiv:1912.04977 [cs.LG]
+Cite as: Advances and open problems in federated learning	arXiv:1912.04977 [cs.LG]
 
 
 ### Communication Efficient Federated Diffusion
-
-### Training
-
-### rounds
-
-### use mini-batch SGD with batch size B, and fixed learning rate η
 
 Training Rounds: For each round, each client updates their local model using mini-batch SGD on their dataset and returns the updated parameters to the federator.
 
@@ -80,8 +71,6 @@ Training Rounds: For each round, each client updates their local model using min
 3. UDEC Method: Collaboratively trains only the decoder parameters, allowing clients to use their locally trained encoder and bottleneck.
 
 4. ULATDEC Method: Collaboratively trains both decoder and bottleneck parameters to unify feature selection.
-
-These methods aim to enhance communication efficiency in federated learning while maintaining model performance.
 
 ![slide 6](/assets/img/2025-03-17/slide6_img1.png)
 

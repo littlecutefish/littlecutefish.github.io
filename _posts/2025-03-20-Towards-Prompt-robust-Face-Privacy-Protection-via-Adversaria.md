@@ -6,16 +6,11 @@ tags: [paper, tech, face privacy, adversarial attack]
 ---
 
 
-### Cite as: arXiv:2305.03980 [cs.CV]
+Cite as: arXiv:2305.03980 [cs.CV]
 
-### Submitted on 2023/05
+Submitted on 2023/05
 
-### Towards Prompt-robust Face Privacy Protection via Adversarial
-
-### Decoupling Augmentation Framework
-
-### Ruijia Wu, Yuhang Wang, Huafeng Shi, Zhipeng Yu, Yichao Wu, Ding Liang
-
+Ruijia Wu, Yuhang Wang, Huafeng Shi, Zhipeng Yu, Yichao Wu, Ding Liang
 
 ### Abstract
 
@@ -40,7 +35,7 @@ Text-to-image diffusion models methods are unstable against different attacker p
 
 ### Methodology
 
-### Vision-Adversarial Loss:  LVAL=॥xrec - xtarget॥2
+### Vision-Adversarial Loss:  L_VAL=॥x_rec - x_target॥^2
 
 The goal is to bring the reconstructed image closer to the target image, distancing it from training samples.
 
@@ -49,29 +44,29 @@ The goal is to bring the reconstructed image closer to the target image, distanc
 
 ### Methodology
 
-### Prompt-Robust Augmentation (PRA):
+Prompt-Robust Augmentation (PRA):
 
-### text-to-image: “A cute cat sitting by the window.”
+text-to-image: “A cute cat sitting by the window.”
 
-### Overfitting problem: “a cat playing in the garden” -> fail
+Overfitting problem: “a cat playing in the garden” -> fail
 
-### 1. At the Text Input Level
+1. At the Text Input Level
 
-### Reducing Overfitting
+Reducing Overfitting
 
-### -> 	use two special characters:
+-> 	use two special characters:
 
-### Underscore: "A cute cat_sitting by the window."
+Underscore: "A cute cat_sitting by the window."
 
-### Empty: "A cute cat,"
+Empty: "A cute cat,"
 
-### 2. At the Text Feature Level
+2. At the Text Feature Level
 
-### Diversifying Text
+Diversifying Text
 
 When generating adversarial perturbations, we can perform data augmentation on the text features.
 
-### Ex. "A cat in a tree", "A cat in a tree, possibly with a dog."
+Ex. "A cat in a tree", "A cat in a tree, possibly with a dog."
 
 ![slide 6](/assets/img/2025-03-20-Towards-Prompt-robus/slide6_img1.png)
 
@@ -94,29 +89,29 @@ Focus on the attention matrix within the cross-attention mechanism to interfere 
 
 ### Experimental Setups
 
-### Datasets: Celeba-HQ, VGGFace2
+Datasets: Celeba-HQ, VGGFace2
 
-### Image Size: 512x512
+Image Size: 512x512
 
-### Implementation Details: (Adversarial Attacks)
+Implementation Details: (Adversarial Attacks)
 
-### Method: Projected Gradient Descent (PGD)
+- Method: Projected Gradient Descent (PGD)
 
-### Type: Untargeted attacks
+- Type: Untargeted attacks
 
-### Steps: 50
+- Steps: 50
 
-### Step Size: 0.1
+- Step Size: 0.1
 
-### Budget: 8/255
+- Budget: 8/255
 
-### Defense Evaluation: (Simulated Prompts for Adversarial Testing)
+Defense Evaluation: (Simulated Prompts for Adversarial Testing)
 
-### Token Level prompts: "a photo of ( S* )" where ( S* \in { sks, t@t, rjq, ajwerq } )
+Token Level prompts: "a photo of ( S* )" where ( S* \in { sks, t@t, rjq, ajwerq } )
 
-### Prompt Level: 	"one picture of ajwerq person"
+Prompt Level: 	"one picture of ajwerq person"
 
-### "a dslr portrait of rjq person"
+"a dslr portrait of rjq person"
 
 
 ### Experiments
