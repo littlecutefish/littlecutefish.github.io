@@ -6,16 +6,11 @@ tags: [paper, tech]
 ---
 
 
-### Cite as: arXiv
+Cite as: arXiv
 
-### Submitted on 2025/03
+Submitted on 2025/03
 
-### REF: https://arxiv.org/abs/2503.13945
-
-### Make the Most of Everything:
-
-### Further Considerations on Disrupting Diffusion-based Customization
-
+REF: https://arxiv.org/abs/2503.13945
 
 ### Comparison across different black-box prompts
 

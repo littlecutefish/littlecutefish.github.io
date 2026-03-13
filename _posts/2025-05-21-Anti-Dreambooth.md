@@ -5,14 +5,9 @@ categories: [master]
 tags: [paper, tech, face privacy]
 ---
 
-### Anti-DreamBooth:
+Cite as: ICCV 2023
 
-### Protecting users from personalized text-to-image synthesis
-
-
-### Cite as: ICCV 2023
-
-### Submitted on 2023/10
+Submitted on 2023/10
 
 
 ![slide 2](/assets/img/2025-05-21/slide2_img1.png)
