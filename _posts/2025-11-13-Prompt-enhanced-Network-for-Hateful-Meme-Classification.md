@@ -5,39 +5,34 @@ categories: [master]
 tags: [paper, tech, hateful meme]
 ---
 
-### PEN
+Cite as ArXiv:2411.07527
 
-### Prompt-enhanced Network for Hateful Meme Classification
+Submitted on 2025/05
 
-
-### Cite as ArXiv:2411.07527
-
-### Submitted on 2025/05
-
-### https://arxiv.org/abs/2411.07527
+REF: https://arxiv.org/abs/2411.07527
 
 
 ### Introduction (Hateful meme classification)
 
-### Stage 1: 早期的多模態融合 (Alignment and Fusion)
+Stage 1: 早期的多模態融合 (Alignment and Fusion)
 
-### 迷因包含「圖片」和「文字」兩種模態，所以模型必須同時理解這兩者。
+迷因包含「圖片」和「文字」兩種模態，所以模型必須同時理解這兩者。
 
-### Paper: Hateful Meme Challenge,  Vilio
+Paper: Hateful Meme Challenge,  Vilio
 
-### Stage 2: 導入外部知識 (External Knowledge)
+Stage 2: 導入外部知識 (External Knowledge)
 
-### 光靠圖片和文字還不夠。
+光靠圖片和文字還不夠。
 
-### 很多仇恨言論是隱晦的，需要複雜的推理和背景知識才能看懂 。
+很多仇恨言論是隱晦的，需要複雜的推理和背景知識才能看懂 。
 
-### Paper: DisMultiHate, MultiModal Learning
+Paper: DisMultiHate, MultiModal Learning
 
-### Stage 3: 模態轉換 (Modality Transformation)
+Stage 3: 模態轉換 (Modality Transformation)
 
-### 不直接處理圖片，而是將多模態任務轉變為純文字任務 。
+不直接處理圖片，而是將多模態任務轉變為純文字任務 。
 
-### 當時的多模態模型（如 VilBERT、VisualBERT ）雖然能同時處理圖文，但它們在訓練時沒有被賦予這些龐大且隱晦的文化、宗教、社會背景知識。
+當時的多模態模型（如 VilBERT、VisualBERT ）雖然能同時處理圖文，但它們在訓練時沒有被賦予這些龐大且隱晦的文化、宗教、社會背景知識。
 
 ### Paper: PromptHate (2022), Pro-Cap (2023)
 
